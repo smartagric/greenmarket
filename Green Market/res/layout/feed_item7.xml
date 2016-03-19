@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.integra.dealcaller">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePic7"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:scaleType="fitCenter"
+                android:src="@drawable/null_profile"
+                  >
+            </com.android.volley.toolbox.NetworkImageView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <TextView
+                    android:id="@+id/name7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timestamp7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatusMsg7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top" />
+
+        <TextView
+            android:id="@+id/txtUrl7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:textColorLink="@color/link" />
+
+        <com.integra.dealcaller.FeedImageView
+            android:id="@+id/feedImage7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flatimage"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:visibility="visible" 
+             />
+
+        <VideoView
+        android:id="@+id/video_view7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+        
+
+        
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                
+                <TextView
+                    android:id="@+id/comments7"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="italic"
+                    android:textColor="@color/timestamp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+                
+                <TextView
+                    android:id="@+id/expressions7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text=""
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+                
+                
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip" >
+
+            <ImageButton
+                android:id="@+id/ButtonEmotion7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dip"
+                android:layout_marginLeft="-4dip"
+                android:layout_marginRight="-4dip"
+                android:layout_marginTop="-1dip"
+                android:layout_weight="0.11"
+                android:background="#fafafa"
+               android:src="@drawable/ic_action_download"
+                
+                 />
+
+            <Button
+                android:id="@+id/ButtonComment7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dip"
+                android:layout_marginLeft="-4dip"
+                android:layout_marginRight="-4dip"
+                android:layout_marginTop="-1dip"
+                android:layout_weight="0.05"
+                android:background="#fafafa"
+                android:drawableLeft="@drawable/message"
+                android:gravity="fill_vertical"
+                android:text="Comment" />
+
+            <Button
+                android:id="@+id/ButtonShare7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dip"
+                android:layout_marginLeft="-4dip"
+                android:layout_marginRight="-4dip"
+                android:layout_marginTop="-1dip"
+                android:layout_weight="0.09"
+                android:background="#fafafa"
+                android:drawableLeft="@drawable/share"
+                android:gravity="fill_vertical"
+                android:text="Share" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+ 
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail8"
+        android:layout_width="@dimen/feed_item_profile_pic"
+        android:layout_height="@dimen/feed_item_profile_pic"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/null_profile"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail8"
+        android:layout_toRightOf="@+id/thumbnail8"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/rating8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title8"
+        android:layout_marginTop="1dip"
+        android:layout_toLeftOf="@+id/imageButtonfollow8"
+        android:layout_toRightOf="@+id/thumbnail8"
+        android:textSize="@dimen/rating" />
+     
+    <!-- Genre -->
+
+    <TextView
+        android:id="@+id/genre8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating8"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/imageButtonfollow8"
+        android:layout_toRightOf="@+id/thumbnail8"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYear8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#98db40"
+        android:textSize="@dimen/year" />
+    
+    <ImageButton
+        android:id="@+id/imageButtonfollow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/follow_icon" />
+ 
+</RelativeLayout>

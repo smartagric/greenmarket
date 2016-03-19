@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="10dp"
+    android:layout_margin="10dp" >
+ 
+    <!-- Thumbnail Image -->
+    <com.integra.dealcaller.FeedImageView3
+        android:id="@+id/thumbnail6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/null_profile"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/thumbnail6"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/rating6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title6"
+        android:layout_marginTop="1dip"
+        android:textSize="@dimen/rating" />
+     
+    <!-- Genre -->
+
+    <TextView
+        android:id="@+id/genre6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rating6"
+        android:layout_below="@id/rating6"
+        android:layout_marginTop="5dp"
+        
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYear6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        
+        android:textColor="#98db40"
+        android:textSize="@dimen/year" />
+
+    <ImageButton
+        android:id="@+id/imageButtonfollow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title6"
+        android:background="#00000000"
+        android:src="@drawable/follow_icon" />
+ 
+</RelativeLayout>

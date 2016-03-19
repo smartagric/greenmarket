@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.integra.dealcaller"
+    
+   
+    android:versionCode="1"
+    android:versionName="1.0" 
+    >
+	
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" 
+         />
+ 
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    
+   <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+   <uses-permission android:name="android.permission.INTERNET"/> 
+ 
+   <uses-permission android:name="android.permission.WAKE_LOCK"/> 
+   
+   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+   
+   <permission android:name="com.integra.dealcaller.permission.C2D_MESSAGE" android:protectionLevel="signature"/> 
+   <uses-permission android:name="com.integra.dealcaller.permission.C2D_MESSAGE"/>
+    
+
+    <application
+        android:name="com.integra.dealcaller.AppController"
+        
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" 
+        android:backupAgent="TheBackupAgent">
+
+       
+              
+ 		<meta-data
+         		 android:name="android.app.default_searchable"
+                android:value="com.integra.dealcaller.SearchResultsActivity" />
+        
+ 		
+ 		
+        
+ 		
+ 		<meta-data android:name="com.google.android.backup.api_key"
+    	android:value="AEdPqrEAAAAIHEkAkkT5mbb6rXSf9UkFQ45B1GWXe_WC_B5Wsw" />
+ 		
+ 		
+ 		<meta-data
+   		 android:name="com.google.android.geo.API_KEY"
+   		 android:value="AIzaSyA7D8xbWoq0Q7Xrty2V5yPlDm1WnAzztd4"/>
+ 		
+        <activity
+            android:name="com.integra.dealcaller.SplashFinal"
+            android:label="@string/app_name"
+           
+            android:windowSoftInputMode="adjustPan">
+           
+            
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name ="android.intent.action.TimeLine.class"/>
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+                       </intent-filter>
+                       
+        </activity>
+        
+        
+        
+        <!-- Search results activity -->
+        <activity android:name="com.integra.dealcaller.SearchResultsActivity"
+            android:parentActivityName="com.integra.dealcaller.TimeLine" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        
+        
+         
+        
+    
+       
+
+        <activity android:name="com.integra.dealcaller.TimeLine"
+            >
+             
+    	</activity>
+                
+        <activity android:name="com.integra.dealcaller.TalkerPage"></activity>
+        
+        <activity android:name="com.integra.dealcaller.FriendPage"></activity>
+        <activity android:name="com.integra.dealcaller.CommitmentFragment"></activity>
+        <activity android:name="com.integra.dealcaller.MePage"></activity>
+        <activity android:name="android.app.TabActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.Inner"></activity>
+    	<activity android:name="com.integra.dealcaller.test"></activity>
+    	<activity android:name="com.integra.dealcaller.DashboardActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.Movie"></activity>
+    	<activity android:name="com.integra.dealcaller.NewProductActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.CustomListAdapter"></activity>
+    	<activity android:name="com.integra.dealcaller.AllProductsActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.ChannelFeedsActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.ShopListActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.TimeLineFragment22"></activity>
+    	<activity android:name="com.integra.dealcaller.RegisterActivity2"
+    	     	  android:windowSoftInputMode="stateHidden">
+    	    	 
+    	</activity>
+    	
+    	<activity android:name="com.integra.dealcaller.RegisterActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.AuthenticatorActivity"/>
+    	<activity android:name="com.integra.dealcaller.OneItemShop"/>
+        <activity android:name="com.integra.dealcaller.SignUpActivity"  />
+    	<activity android:name="com.integra.dealcaller.DiskLruCache"></activity>
+    	<activity android:name="com.integra.dealcaller.PagerContainer"></activity>
+    	<activity android:name="com.integra.dealcaller.AppController"></activity>
+    	<activity android:name="com.integra.dealcaller.RoundedImageView"></activity>
+    	<activity android:name="com.integra.dealcaller.LruBitmapCache"></activity>
+    	<activity android:name="com.integra.dealcaller.EditProductActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.AllProductsActivity2"></activity>
+    	<activity android:name="com.integra.dealcaller.MainActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.StrictLineReader"></activity>
+    	<activity android:name="com.integra.dealcaller.Util5"></activity>
+    	<activity android:name="com.integra.dealcaller.LoginActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.IntroActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.crop.CropImageActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.crop.CropImageView"></activity>
+    	<activity android:name="com.integra.dealcaller.WebPayment"></activity>
+    	<activity android:name="com.integra.dealcaller.WebPaymentLocal"></activity>
+   		<activity android:name="com.integra.dealcaller.ArrayAdapterWithIcon"></activity>
+    	<activity android:name="com.integra.dealcaller.ExpandableListAdapter"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedItem"></activity>
+    	<activity android:name="com.integra.dealcaller.CommitmentPageDetail"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedItem2"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedItem3"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedItem6"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedItem8"></activity>
+    	<activity android:name="com.integra.dealcaller.ThreadControl"></activity>
+    	<activity android:name="com.integra.dealcaller.RecyclingImageView"></activity>
+    	<activity android:name="com.integra.dealcaller.RecyclingBitmapDrawable"></activity>
+    	<activity android:name="com.integra.dealcaller.ImageFetcher"></activity>
+    	<activity android:name="com.integra.dealcaller.ImageResizer"></activity>
+    	<activity android:name="com.integra.dealcaller.ImageWorker"></activity>
+    	<activity android:name="com.integra.dealcaller.Utils6"></activity>
+    	<activity android:name="com.integra.dealcaller.ImageCache"></activity>
+    	<activity android:name="com.integra.dealcaller.RegisteringGCM2"></activity>
+    	
+    	
+    	
+    	<activity android:name="com.integra.dealcaller.AsyncTask"></activity>
+    	
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter"></activity>
+    	<activity android:name="com.integra.dealcaller.FriendsProfile"></activity>
+    	
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter2"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter3"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter4"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter6"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter5"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedListAdapter8"></activity>
+    	<activity android:name="com.integra.dealcaller.DrawingActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.DrawingView"></activity>
+    	<activity android:name="com.integra.dealcaller.FeedImageView"></activity>
+  		<activity android:name="com.integra.dealcaller.UserFunctions"></activity>
+  		<activity android:name="com.integra.dealcaller.DatabaseHandler"></activity>
+    	<activity android:name="com.integra.dealcaller.LruBitmapCache2"></activity>
+    	<activity android:name="com.integra.dealcaller.ImageViewer"></activity>
+    	<activity android:name="com.integra.dealcaller.TalkerProfile"></activity>
+    	<activity android:name="com.integra.dealcaller.Message"></activity>
+    	<activity android:name="com.integra.dealcaller.MessagesListAdapter"></activity>
+    	<activity android:name="com.integra.dealcaller.NameActivity"></activity>
+    	<activity android:name="com.integra.dealcaller.Utils"></activity>
+    	<activity android:name="com.integra.dealcaller.HorizontalListView"></activity>
+    	<activity android:name="com.integra.dealcaller.CustomHttpClient"></activity>
+    	<activity android:name="com.integra.dealcaller.WsConfig"></activity>
+    	<activity android:name="com.integra.dealcaller.UserFragment"></activity>
+    	<activity android:name="com.integra.dealcaller.MSGReceiver"></activity>
+    	<activity android:name="com.integra.dealcaller.MSGService"></activity>
+    	<activity android:name="com.integra.dealcaller.MainActivity2"></activity>
+    	<activity android:name="com.integra.dealcaller.LoginFragment"></activity>
+    	<activity android:name=	"com.integra.dealcaller.HorizontalAdapter1"></activity>
+    	<activity android:name=	"com.integra.dealcaller.HorizontalAdapter2"></activity>
+		<activity android:name= "com.integra.dealcaller.HorizontalAdapter3"></activity>
+		<activity android:name=	"com.integra.dealcaller.HorizontalFeedItem1"></activity>
+		<activity android:name=	"com.integra.dealcaller.HorizontalFeedItem2"></activity>
+		<activity android:name=	"com.integra.dealcaller.HorizontalFeedItem3"></activity>
+		<activity android:name=	"com.integra.dealcaller.Item"></activity>
+		<activity android:name=	"com.integra.dealcaller.JSONParser"></activity>
+		<activity android:name=	"com.integra.dealcaller.JSONParser2"></activity>
+		<activity android:name=	"com.integra.dealcaller.FeedItem4"></activity>
+		<activity android:name=	"com.integra.dealcaller.FeedItem5"></activity>
+		<activity android:name=	"com.integra.dealcaller.CustomListAdapter2"></activity>
+		<activity android:name=	"com.integra.dealcaller.CustomListAdapter3"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter4"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter5"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter6"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter7"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter8"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter9"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter10"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter11"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomListAdapter12"></activity>
+    	<activity android:name=	"com.integra.dealcaller.CustomViewPager"></activity>
+    	<activity android:name=	"com.integra.dealcaller.FragmentTen"></activity>
+ 		<activity android:name=	"com.integra.dealcaller.Sync"></activity>
+ 		<activity android:name=	"com.integra.dealcaller.CommentDialog"></activity>
+    	<activity android:name=	"com.integra.dealcaller.ViewPagerAdapter"></activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.ChatActivity"></activity>
+    	<activity android:name=	"com.integra.dealcaller.ChatListAdapter"></activity>
+    	<activity android:name=	"com.integra.dealcaller.ChatPeople"></activity>
+    	<activity android:name=	"com.integra.dealcaller.DBOperation"></activity>
+    	<activity android:name=	"com.integra.dealcaller.GcmBroadcastReceiver"></activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.ListAdapter"></activity>
+    	<activity android:name=	"com.integra.dealcaller.ListPeople"></activity>
+    	<activity android:name=	"com.integra.dealcaller.PeopleObject"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Utils2"></activity>
+ 
+    	<activity android:name=	"com.integra.dealcaller.Movie2"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie3"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie4"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie5"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie6"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie7"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie8"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie9"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie10"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie11"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Movie12"></activity>
+    	<activity android:name=	"com.integra.dealcaller.HorizontalListViewwy"></activity>
+    	<activity android:name=	"com.integra.dealcaller.GridClass"></activity>
+    	<activity android:name=	"com.integra.dealcaller.GridViewAdapter"></activity>
+    	<activity android:name=	"com.integra.dealcaller.Wallpaper"></activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.EditPocketProfile"
+    	  
+    	     android:configChanges="orientation|keyboardHidden" 
+           android:windowSoftInputMode="stateHidden">
+    	</activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.GcmIntentService2"></activity>
+    	
+   		<activity android:name=	"com.integra.dealcaller.MyMessages"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MovieMyMessages"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MyMessagesListAdapter"></activity>
+    	    
+    	<activity android:name=	"com.integra.dealcaller.MyTalkers"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MovieMyTalkers"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MyTalkersListAdapter"></activity>
+    	<activity android:name=	"com.integra.dealcaller.BitmapLruImageCache"></activity>
+    	<activity android:name=	"com.integra.dealcaller.RequestManager"></activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.MyTalkSchedules"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MovieMyTalkSchedules"></activity>
+    	<activity android:name=	"com.integra.dealcaller.MyTalkSchedulesListAdapter"></activity>
+    	<activity android:name=	"com.integra.dealcaller.ImagePagerAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.AbstractClass"></activity>
+    	<activity android:name=	"com.integra.dealcaller.PrefManager"></activity>
+        <activity android:name=	"com.integra.dealcaller.ImageCacheManager"></activity>
+    	
+    	<activity android:name=	"com.integra.dealcaller.SearchFeed"></activity>
+    	<activity android:name=	"com.integra.dealcaller.SearchAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.CustomRequest"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlidersShow"></activity>
+        <activity android:name=	"com.integra.dealcaller.HorizontalFeedItem"></activity>
+        <activity android:name=	"com.integra.dealcaller.HorizontalFeedListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.CustomRequest2"></activity>
+        <activity android:name=	"com.integra.dealcaller.PullToRefreshActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.PullToRefreshListView"></activity>
+        <activity android:name=	"com.integra.dealcaller.ImageViewer2"></activity>
+        <activity android:name=	"com.integra.dealcaller.PocketProfile"></activity>
+        <activity android:name=	"com.integra.dealcaller.TalkerTools"></activity>
+        <activity android:name=	"com.integra.dealcaller.VerticalScrollview"></activity>
+        <activity android:name=	"com.integra.dealcaller.Utils3"></activity>
+        <activity android:name=	"com.integra.dealcaller.PagerActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.NestedListView"></activity>
+        <activity android:name=	"com.integra.dealcaller.ImagePagerAdapter2"></activity>
+        <activity android:name=	"com.integra.dealcaller.AllPosts"></activity>
+        <activity android:name=	"com.integra.dealcaller.NewPost"></activity>
+        <activity android:name=	"com.integra.dealcaller.NewPost2"></activity>
+        <activity android:name=	"com.integra.dealcaller.NewSchedule"></activity>
+        <activity android:name=	"com.integra.dealcaller.TalkerPostUps"></activity>
+        <activity android:name=	"com.integra.dealcaller.FeedItem7"></activity>
+        <activity android:name=	"com.integra.dealcaller.AutoScrollViewPager"></activity>
+        <activity android:name=	"com.integra.dealcaller.CirclePageIndicator"></activity>
+        <activity android:name=	"com.integra.dealcaller.PageIndicator"></activity>
+        <activity android:name=	"com.integra.dealcaller.VerticalViewPager"></activity>
+        <activity android:name=	"com.integra.dealcaller.IcsLinearLayout"></activity>
+     	<activity android:name=	"com.integra.dealcaller.LinearListView"></activity>
+     	<activity android:name=	"com.integra.dealcaller.TestActivity"></activity>
+     	<activity android:name=	"com.integra.dealcaller.CommitmentPageDetail2"></activity>
+        <activity android:name=	"com.integra.dealcaller.OrphanageFeedItem"></activity>
+        <activity android:name=	"com.integra.dealcaller.OrphanageListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.OrphanageProfile"></activity>
+        <activity android:name=	"com.integra.dealcaller.PulldownViewActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.NewShowcase"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.FeedListAdapter7"></activity>
+        <activity android:name=	"com.integra.dealcaller.TalkerSchedules"></activity>
+        <activity android:name=	"com.integra.dealcaller.MovieTalkerSchedules"></activity>
+        <activity android:name=	"com.integra.dealcaller.TalkerSchedulesListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.RoundedTransformationBuilder"></activity>
+        <activity android:name=	"com.integra.dealcaller.RoundedImageVieww"></activity>
+        <activity android:name=	"com.integra.dealcaller.RoundedDrawable"></activity>
+        <activity android:name=	"com.integra.dealcaller.AddItemToShowcase"></activity>
+        <activity android:name=	"com.integra.dealcaller.CreateNewShowcase"></activity>
+        
+        
+        <activity android:name=	"com.integra.dealcaller.ShareVideo"></activity>
+        
+        
+        <activity android:name=	"com.integra.dealcaller.SharePhoto"
+          android:configChanges="orientation|keyboardHidden"
+          
+           android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        
+        
+        <activity android:name=	"com.integra.dealcaller.UpdateStatus"></activity>
+        <activity android:name=	"com.integra.dealcaller.PersonalizeYourAccount"></activity>
+       
+        <activity android:name=	"com.integra.dealcaller.MyFriendRequests"></activity>
+        <activity android:name=	"com.integra.dealcaller.MovieMyFriendRequests"></activity>
+        <activity android:name=	"com.integra.dealcaller.MyFriendRequestsListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.AnimationTour"></activity>
+        <activity android:name=	"com.integra.dealcaller.Help"></activity>
+        <activity android:name=	"com.integra.dealcaller.Config"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlideUpActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlideUpActivity2"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlideUpActivity3"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlideUpActivity4"></activity>
+        <activity android:name=	"com.integra.dealcaller.SlideUpActivity5"></activity>
+        <activity android:name=	"com.integra.dealcaller.FadeInActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.MultiViewPager"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.AndroidMultiPartEntity"></activity>
+        <activity android:name=	"com.integra.dealcaller.UploadActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.UploadActivity2"></activity>
+        <activity android:name=	"com.integra.dealcaller.AdsListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.ImagePagerAdapter3"></activity>
+        <activity android:name=	"com.integra.dealcaller.FindFriends"></activity>
+        <activity android:name=	"com.integra.dealcaller.MovieFindFriends"></activity>
+        <activity android:name=	"com.integra.dealcaller.FindFriendsListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.RegisteringGCM"></activity>
+        <activity android:name=	"com.integra.dealcaller.MainActivity3"></activity>
+        <activity android:name=	"com.integra.dealcaller.AlertDialogManager"></activity>
+        <activity android:name=	"com.integra.dealcaller.ConnectionDetector"></activity>
+        <activity android:name=	"com.integra.dealcaller.CommonUtilities"></activity>
+        <activity android:name=	"com.integra.dealcaller.ServerUtilities"></activity>
+        <activity android:name=	"com.integra.dealcaller.WakeLocker"></activity>
+        <activity android:name=	"com.integra.dealcaller.SplashActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.CentralImageViewer"></activity>
+        <activity android:name=	"com.integra.dealcaller.SimpleViewAnimator"></activity>
+        <activity android:name=	"com.integra.dealcaller.AdsItem"></activity>
+        <activity android:name=	"com.integra.dealcaller.BadgeView2"></activity>
+        <activity android:name=	"com.integra.dealcaller.UpdateShowcase"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.RegisterActivity5"></activity>
+        <activity android:name=	"com.integra.dealcaller.MainActivity5"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.ColorsShape"></activity>
+        <activity android:name=	"com.integra.dealcaller.ContentLoadingSmoothProgressBar"></activity>
+        <activity android:name=	"com.integra.dealcaller.SmoothProgressBar"></activity>
+        <activity android:name=	"com.integra.dealcaller.SmoothProgressBarUtils"></activity>
+        <activity android:name=	"com.integra.dealcaller.SmoothProgressDrawable"></activity>
+        
+     	<activity android:name=	"com.integra.dealcaller.AddPlaceActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.ChatActivity2"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.AddComment"
+         android:parentActivityName="com.integra.dealcaller.Notifications"   
+        ></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.GcmIntentService"></activity>
+        <activity android:name=	"com.integra.dealcaller.PlaceArrayAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.ChatHeadService"></activity>
+        
+        <activity android:name=	"com.integra.dealcaller.Movy"></activity>
+        <activity android:name=	"com.integra.dealcaller.SwipeListAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.Notifications"></activity>
+        <activity android:name=	"com.integra.dealcaller.EmoActivity"></activity>
+        <activity android:name=	"com.integra.dealcaller.TextWatcherAdapter"></activity>
+        <activity android:name=	"com.integra.dealcaller.BaseActivity"></activity>
+     
+
+        
+        
+        <receiver
+            android:name="com.integra.dealcaller.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                 
+                <category android:name="com.integra.dealcaller"/> 
+                </intent-filter> 
+        </receiver> 
+        <service android:name="com.integra.dealcaller.GCMIntentService2"/>
+        
+        <service android:name="com.integra.dealcaller.ChatHeadService"/>
+        
+                <service android:name="com.integra.dealcaller.UdinicAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator" />
+   
+        </service>
+         
+       
+       
+    </application>
+
+</manifest>

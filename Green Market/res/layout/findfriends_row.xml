@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:padding="4dp" >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ rel"
+        android:background="@drawable/bg_parent_rounded_corner" 
+        android:orientation="horizontal"
+        android:padding="8dp" >
+ 
+    <!-- Thumbnail Image -->
+    <com.integra.dealcaller.NetworkImageView3
+        android:id="@+id/thumbnailfindfriends"
+        android:src="@drawable/null_profile"
+        android:layout_width="@dimen/feed_item_profile_pic"
+        android:layout_height="@dimen/feed_item_profile_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/titlefindfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnailfindfriends"
+        android:layout_toRightOf="@+id/thumbnailfindfriends"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/ratingfindfriends"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlefindfriends"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailfindfriends"
+        android:textSize="12sp" />
+     
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/genrefindfriends"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingfindfriends"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/thumbnailfindfriends"
+        android:textColor="@color/genre"
+        android:textSize="12sp" />
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYearfindfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+        android:textSize="@dimen/year" />
+    
+    <ImageButton
+            android:id="@+id/imageButton111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle5"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/correct"
+            android:layout_marginTop="7dp"
+          />
+ 
+    </RelativeLayout>
+</RelativeLayout>

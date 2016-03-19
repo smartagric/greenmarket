@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listbuddies="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+   
+    android:layout_height="match_parent">
+
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:background="@drawable/patterno"
+    android:layout_height="match_parent">
+    
+    
+    
+
+    <com.integra.dealcaller.ListBuddiesLayout xmlns:listbuddies="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listbuddies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+       
+     
+        listbuddies:speed="3"
+        listbuddies:gap="@dimen/gap"
+        listbuddies:gap2="@dimen/gap2"
+       
+       
+        listbuddies:gapColor="#00000000"
+     
+        listbuddies:autoScrollFaster="right"
+        listbuddies:scrollFaster="left" />
+
+    <!--In case we want to created a listBuddies layout dynamically then we need a container for it-->
+       <FrameLayout
+        android:id="@+id/listbuddies_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+      
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/feed_bg" />
+
+     <com.integra.dealcaller.DrawInsetsFrameLayout
+        android:id="@+id/insets_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        listbuddies:insetBackground="#00000000" 
+        >
+
+    </com.integra.dealcaller.DrawInsetsFrameLayout>
+</FrameLayout>
+
+
+<ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp" />
+</RelativeLayout>

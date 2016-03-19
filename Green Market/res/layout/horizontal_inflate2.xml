@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="290dp"
+    android:orientation="horizontal"
+    android:background="@color/feed_bg" >
+
+ <TextView
+        android:id="@+id/txtKindly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ 		android:layout_marginTop="5dp"
+ 		android:background="#3598db"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:padding="4dp"
+        android:text="Featured Sermons"
+        
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+<com.integra.dealcaller.HorizontalListView
+                  android:id="@+id/listee5b"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:divider="#cdcdcd"
+                  android:layout_below="@+id/txtKindly"
+        		  android:smoothScrollbar="true"
+        		  android:scrollingCache="false"
+    			  android:animationCache="false"
+                  android:dividerHeight="0.1dp"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  android:listSelector="@drawable/list_row_selector"
+                   >
+              </com.integra.dealcaller.HorizontalListView>
+
+        </RelativeLayout>

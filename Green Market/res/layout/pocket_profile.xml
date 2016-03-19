@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp" >
+    
+    
+    <LinearLayout
+     	
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        
+    <RelativeLayout
+     	
+        android:layout_width="fill_parent"
+        
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+        <com.integra.dealcaller.RoundedImageView
+            android:id="@+id/pocketPhoto"
+            android:layout_width="90dp"
+            android:layout_height="95dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:focusable="false"
+		 	android:focusableInTouchMode="false"
+            android:src="@drawable/null_profile" />
+        
+    </RelativeLayout>
+    
+    
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        android:text="Mobile No.:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="E-mail:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Friends:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Schools at:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Works at:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Stays at:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Last seen:"
+        android:textColor="@color/settings_label"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vv7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:singleLine="true" />
+    
+    
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBarPorket"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    
+    </LinearLayout>
+
+</ScrollView>

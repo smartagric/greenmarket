@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="355dp"
+    android:orientation="horizontal"
+    android:background="@color/feed_bg" >
+
+   
+
+<com.integra.dealcaller.HorizontalListView
+                  android:id="@+id/listee11a"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:divider="#cdcdcd"
+        		  android:smoothScrollbar="true"
+        		  android:scrollingCache="false"
+    			  android:animationCache="false"
+                  android:dividerHeight="0.1dp"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  android:listSelector="@drawable/list_row_selector"
+                   >
+              </com.integra.dealcaller.HorizontalListView>
+
+        </LinearLayout>

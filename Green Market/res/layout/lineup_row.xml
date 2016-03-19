@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relate"
+	 android:background="@color/feed_bg"
+   
+    >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@drawable/list_row_selector"
+        android:orientation="horizontal"
+        android:paddingTop="15dp" 
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+ 
+        
+        
+        
+        <RelativeLayout 
+    	android:id="@+id/thumbnailrelativer"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:visibility="visible"
+       
+        android:layout_alignParentLeft="true"
+       
+        android:layout_marginRight="8dp"
+  		>
+  		
+            
+        <com.integra.dealcaller.RoundedImageVieww
+       	        android:layout_width="match_parent"
+       	        android:layout_height="match_parent"
+       	        android:id="@+id/thumbnail00"
+       	   	   
+       	        android:scaleType="centerCrop"
+       	        android:src="@drawable/null_profile"
+				android:padding="1dp"
+				app:riv_corner_radius="5dip"
+      			app:riv_border_width="3dip"                                  
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff" />
+        
+        
+            <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/titleinitials00"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sinking_button"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+         />
+            
+            
+         <!-- Initials -->
+    <TextView
+        android:id="@+id/titleinitials00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="1dip"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="SP"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold" />
+ 
+        </RelativeLayout>
+        
+ 
+ 
+    <!-- Movie Title -->
+ 
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/rating00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title00"
+        android:layout_toLeftOf="@+id/brief"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="@dimen/rating" />
+     
+  <!-- Ticker-->
+
+    <TextView
+        android:id="@+id/ticker00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating00"
+        android:layout_toLeftOf="@+id/brief"
+        android:drawableLeft="@drawable/location_pin"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="@dimen/rating" />
+    
+    <!-- Day -->
+ 
+    <TextView
+        android:id="@+id/day00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#3498db"
+        android:layout_below="@id/ticker00"
+        android:textColor="#ffffff"
+        android:padding="3dp"
+        android:text="Mon"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/title00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnailrelativer"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/brief"
+        android:background="@drawable/briefcase"
+        android:padding="7dp"
+        android:scaleType="fitCenter"
+        
+        android:visibility="visible" />
+ 
+</RelativeLayout>   
+ 
+</RelativeLayout>

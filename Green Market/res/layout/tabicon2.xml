@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent" 
+		android:layout_gravity="fill_horizontal"
+		android:id= "@+id/rlayout2" 
+		 > 
+
+<ImageView 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent" 
+		android:layout_centerInParent="true" 
+		android:scaleType="fitCenter" 
+		android:id="@+id/icon2"
+		android:src="@drawable/icon_talkpage"/>
+
+    <com.integra.dealcaller.BadgeView
+        android:id="@+id/txtCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/icon2"
+        android:layout_margin="0dp"
+        android:background="@drawable/shapecount"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+    
+
+

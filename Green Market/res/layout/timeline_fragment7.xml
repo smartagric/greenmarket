@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    
+     <ProgressBar
+		android:id="@+id/progressBar7"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"
+	
+		 />
+
+    <com.integra.dealcaller.PullToRefreshListView
+        android:id="@+id/listok7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:divider="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+	        android:id="@+id/footer7"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:background="#3598db"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        
+        <ImageButton
+             android:id="@+id/b7"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:layout_weight="0.49"
+             android:background="#3598db"
+             android:src="@drawable/ic_action_goo"/>
+              
+	 <ImageButton
+             android:id="@+id/b7"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:layout_weight="0.49"
+             android:background="#3598db"
+             android:src="@drawable/ic_action_goo"/>
+	 
+	 <ImageButton
+             android:id="@+id/b7"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:layout_weight="0.49"
+             android:background="#3598db"
+             android:src="@drawable/ic_action_goo"/>
+	 
+	 <ImageButton
+             android:id="@+id/b7"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:layout_weight="0.49"
+             android:background="#3598db"
+             android:src="@drawable/ic_action_goo"/>
+	 
+	 <ImageButton
+             android:id="@+id/b7"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:layout_weight="0.49"
+             android:background="#3598db"
+             android:src="@drawable/ic_action_goo"/>
+	        
+	    </LinearLayout>
+       
+
+</RelativeLayout>

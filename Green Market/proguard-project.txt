@@ -1,0 +1,120 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep class android.support.v7.widget.ShareActionProvider { *; }
+-keep class android.support.v7.widget.SearchView { *; }
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+
+-dontwarn javax.annotation.processing.AbstractProcessor
+-dontwarn org.apache.http.client.HttpClient
+-dontwarn javax.annotation.processing.ProcessingEnvironment
+-dontwarn javax.lang.model.element.TypeElement
+-dontwarn javax.lang.model.element.Element
+-dontwarn javax.annotation.processing.Filer
+-dontwarn javax.tools.JavaFileObject
+-dontwarn javax.annotation.processing.RoundEnvironment
+
+-dontwarn javax.lang.model.element.Element
+-dontwarn javax.lang.model.element.Modifier
+-dontwarn javax.lang.model.element.ElementKind
+-dontwarn javax.lang.model.type.TypeVariable
+-dontwarn javax.lang.model.type.TypeMirror
+-dontwarn javax.lang.model.type.TypeKind
+-dontwarn javax.lang.model.type.ArrayType
+-dontwarn javax.lang.model.type.DeclaredType
+
+-dontwarn javax.lang.model.util.Types
+-dontwarn javax.lang.model.element.ExecutableElement
+-dontwarn javax.lang.model.element.VariableElement
+-dontwarn javax.lang.model.SourceVersion
+-dontwarn butterknife.internal.ButterKnifeProcessor
+-dontwarn javax.annotation.processing.ProcessingEnvironment
+-dontwarn javax.tools.Diagnostic$Kind
+-dontwarn javax.annotation.processing.Messager
+
+-dontwarn com.google.android.gms.maps.GoogleMapOptions
+-dontwarn com.google.android.gms.maps.model.CameraPosition
+
+-dontwarn javax.lang.model.util.Elements
+-dontwarn javax.lang.model.element.PackageElement
+-dontwarn javax.annotation.processing.RoundEnvironment
+-dontwarn javax.tools.JavaFileObject
+-dontwarn javax.lang.model.element.Modifier
+-dontwarn javax.lang.model.util.Types
+-dontwarn javax.tools.Diagnostic
+-dontwarn com.squareup.okhttp.OkHttpClient
+
+-dontwarn com.squareup.okhttp.Cache
+-dontwarn com.squareup.okhttp.CacheControl
+-dontwarn com.squareup.okhttp.CacheControl$Builder
+-dontwarn com.squareup.okhttp.Request$Builder
+-dontwarn com.squareup.okhttp.Call
+-dontwarn com.squareup.okhttp.Response
+-dontwarn com.squareup.okhttp.ResponseBody
+-dontwarn com.squareup.okhttp.Request
+
+-dontwarn org.apache.commons.logging.LogFactory
+-dontwarn javax.naming.ldap.LdapName
+-dontwarn javax.naming.ldap.Rdn
+-dontwarn javax.naming.directory.Attributes
+-dontwarn javax.naming.directory.Attribute
+-dontwarn javax.naming.NamingException
+-dontwarn javax.naming.InvalidNameException
+-dontwarn org.apache.commons.codec.binary.Base64
+
+-dontwarn org.ietf.jgss.GSSManager
+-dontwarn org.ietf.jgss.Oid
+-dontwarn org.apache.http.impl.auth.GGSSchemeBase
+-dontwarn org.apache.http.impl.auth.KerberosScheme
+-dontwarn org.apache.http.impl.auth.SPNegoScheme
+-dontwarn org.ietf.jgss.GSSException
+
+
+-dontwarn org.apache.http.HttpRequest
+-dontwarn org.apache.http.HttpEntity
+-dontwarn org.apache.http.params.HttpParams
+-dontwarn org.apache.http.conn.ClientConnectionManager
+-dontwarn org.apache.http.client.methods.HttpUriRequest
+-dontwarn org.apache.http.HttpResponse
+-dontwarn org.apache.http.protocol.HttpContext
+-dontwarn org.apache.http.HttpHost
+
+-dontwarn org.apache.http.client.ResponseHandler
+-dontwarn org.apache.http.entity.AbstractHttpEntity
+
+-dontskipnonpubliclibraryclassmembers

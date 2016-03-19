@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:background="@color/feed_bg">
+ 
+     <ProgressBar
+		android:id="@+id/progressBar00"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	
+		android:layout_centerInParent="true"
+	
+		 />
+    
+     <TextView android:id="@+id/no_friends" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+      	 
+         android:textSize="13sp"
+         android:gravity="center"
+         android:textStyle="italic"
+         android:text="No friends yet&#10;You can find people&#10;and send them friend requests"
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+     
+      <TextView android:id="@+id/no_internet" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        
+         android:textSize="13sp"
+         android:gravity="center"
+         android:text="Please check your internet connection and try again."
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+     
+    <ListView
+        android:id="@+id/listree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lint"
+      	android:layout_alignParentTop="true"
+        android:divider="#e6e6e6"
+        android:dividerHeight="0.1dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/list_row_selector" />
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_alignParentBottom="true"
+            android:background="#fbac80"
+            android:padding="7dp"
+            android:id="@+id/lint">
+            
+     <EditText
+         android:id="@+id/txtysearch"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:background="#fbac80"
+         android:drawableLeft="@drawable/ic_action_search2"
+         android:drawablePadding="15dp"
+         android:hint="Search"
+         android:padding="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_weight="0.09"
+         android:textColor="@color/feed_bg" />
+     
+     <ImageButton
+         android:id="@+id/web_friends"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:background="#d2ecfa"
+         android:src="@drawable/ic_action_web_site" />
+     
+     <ImageButton
+          android:id="@+id/mobile_friends"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.09"
+          android:background="#d2ecfa"
+          android:src="@drawable/ic_action_phone" />
+    
+     </LinearLayout>
+ 
+</RelativeLayout>

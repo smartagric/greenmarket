@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10sp" >
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="7dp"
+             android:background="#dff0f9"
+             android:paddingBottom="8dp" >
+
+             <TextView
+                 android:id="@+id/txtKindly"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center"
+                 android:text="Support through Bank Account"
+                 android:textStyle="italic" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/edittext_rounded_corner"
+             android:paddingBottom="10dp" >
+
+             <TextView
+                 android:id="@+id/txtAccountDetails"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="20dp"
+                 android:layout_marginTop="10dp"
+                 android:paddingLeft="18dp"
+                 android:text="Account Details"
+                 android:textColor="@color/blue"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:id="@+id/txtBank"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/txtAccountDetails"
+                 android:layout_marginBottom="10dp"
+                 android:paddingLeft="20dp"
+                 android:text="Bank:"
+                 android:textStyle="italic" />
+
+             <TextView
+                 android:id="@+id/txtBankBranch"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/txtBank"
+                 android:layout_marginBottom="10dp"
+                 android:paddingLeft="20dp"
+                 android:text="Branch:"
+                 android:textStyle="italic" />
+
+             <TextView
+                 android:id="@+id/txtAccountName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/txtBankBranch"
+                 android:layout_marginBottom="10dp"
+                 android:paddingLeft="20dp"
+                 android:text="Acc. Name:"
+                 android:textStyle="italic" />
+
+             <TextView
+                 android:id="@+id/txtAccountNumber"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/txtAccountName"
+                 android:layout_marginBottom="10dp"
+                 android:paddingLeft="20dp"
+                 android:text="Acc. No:"
+                 android:textStyle="italic" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="7dp"
+             android:background="#dff0f9"
+             android:paddingBottom="8dp" >
+
+             <TextView
+                 android:id="@+id/txtKindly"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center"
+                 android:text="Support through SMS"
+                 android:textStyle="italic" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="215dp"
+             android:background="@drawable/edittext_rounded_corner"
+             android:paddingTop="20dp" >
+
+             <Button
+                 android:id="@+id/btn_login"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/numberPicker1"
+                 android:layout_marginBottom="10dp"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignRight="@+id/numberPicker1"
+                 android:text="Send" />
+
+             <NumberPicker
+                 android:id="@+id/numberPicker1"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/btn_login"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:focusableInTouchMode="true" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="7dp"
+             android:background="#dff0f9"
+             android:paddingBottom="8dp" >
+
+             <TextView
+                 android:id="@+id/txtKindly"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center"
+                 android:text="Support through Money Transfer"
+                 android:textStyle="italic" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/edittext_rounded_corner"
+             android:paddingBottom="20dp"
+             android:paddingTop="20dp" >
+             
+             
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:id="@+id/lin"
+             android:paddingLeft="7dp"
+    		android:paddingRight="7dp"
+    		android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:layout_alignParentBottom="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentRight="true">
+
+    
+    
+    
+    
+    <ImageView
+        android:id="@+id/buttoso3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginLeft="-1dip"
+        android:layout_marginRight="-1dip"
+      	android:src="@drawable/airtel_icon1"
+        android:layout_weight="0.11"
+        android:paddingTop="2dp"
+      
+        android:textColor="#ffffff"
+        android:background="#ffffff"
+         />
+    
+   
+
+    <ImageView
+        android:id="@+id/buttoso5"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="-1dip"
+        android:layout_marginRight="-1dip"
+        android:layout_weight="0.11"
+        android:background="#00000000"
+        android:paddingTop="2dp"
+        android:layout_margin="2dp"
+        android:visibility="gone"
+        
+        android:textColor="#ffffff" 
+        />
+    
+    
+    
+     </LinearLayout>
+         </RelativeLayout>
+     </LinearLayout>
+
+</ScrollView>

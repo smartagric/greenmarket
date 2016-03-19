@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff69b4"> 
+ 
+     <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teks6"
+            android:background="#ff69b4"
+            android:layout_below="@+id/pager_container6"
+            android:fontFamily="corbel"
+           
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Find experential marriage specialists,counsellors... Download their postups and Join groups."
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:textSize="12sp" />
+     
+     
+     
+
+    <com.integra.dealcaller.NestedListView
+        android:id="@+id/listee6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/teks6"
+        android:divider="#cdcdcd"
+        android:dividerHeight="0.1dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/list_row_selector" >
+
+    </com.integra.dealcaller.NestedListView>
+
+    <com.integra.dealcaller.PagerContainer
+        android:id="@+id/pager_container6"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/feed_bg" >
+
+        <com.integra.dealcaller.AutoScrollViewPager
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+        </com.integra.dealcaller.AutoScrollViewPager>
+    </com.integra.dealcaller.PagerContainer>
+ 
+    </RelativeLayout>
+</ScrollView>
+
+
+ <ProgressBar
+        android:id="@+id/progressBar6"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"/>
+
+ </RelativeLayout>

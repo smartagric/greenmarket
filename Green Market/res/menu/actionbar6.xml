@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:dealcaller="http://schemas.android.com/apk/res-auto">
+    
+
+<item android:id="@+id/action_add"
+     
+      android:title="Add"
+      dealcaller:showAsAction="always|withText"
+      android:orderInCategory="2"
+      android:paddingLeft="-2dp"
+      android:paddingRight="-2dp"
+      android:icon="@drawable/add_comment"
+      
+      
+      />
+     
+  
+     
+         
+    
+</menu>

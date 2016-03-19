@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/view_background"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:orientation="vertical" >
+ 
+   
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    
+     <!-- Name Label -->
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up!"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dip"
+        android:textColor="@color/myblue"
+        android:textStyle="bold"/>
+    
+    
+   
+ 
+    <!-- Input Email -->
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_rounded_corner2"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="8dp"
+        android:focusableInTouchMode="true"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textSize="16sp" >
+
+        
+    </EditText>
+ 
+    <!-- Input Password -->
+    <EditText android:id="@+id/inputPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_rounded_corner2"
+        android:focusableInTouchMode="true"
+       
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="50dp"
+        android:singleLine="true"
+        />
+    
+     <!-- Input Password -->
+    <EditText android:id="@+id/inputPassword2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_rounded_corner2"
+        android:focusableInTouchMode="true"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="50dp"
+        android:singleLine="true"
+        />
+ 
+    <!-- Country -->
+    <EditText android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_rounded_corner2"
+     	android:focusableInTouchMode="true"
+        android:layout_marginBottom="50dp"
+        android:hint="Full Name"
+        
+        android:singleLine="true"
+        />
+ 
+ 
+ 
+    <!-- Input Residence -->
+
+    <EditText
+        android:id="@+id/inputFon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_rounded_corner2"
+        android:ems="10"
+        android:padding="8dp"
+        android:focusableInTouchMode="true"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="16sp" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="horizontal" 
+    android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="10dip">
+ 
+    <!-- Country Code -->
+
+    <TextView
+        android:id="@+id/inputCode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_rounded_corner2"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="-1dip"
+        android:minWidth="35dp"
+        android:singleLine="true"
+        android:padding="8dp"
+        android:hint="Code"
+        android:visibility="gone"
+        android:editable="false"
+        android:textSize="17sp" />
+    
+     <!-- Name Label -->
+
+    
+    
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  	android:layout_marginBottom="10dp"
+    android:orientation="horizontal" 
+    android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="10dip">
+ 
+    <!-- Country Code -->
+
+   <ProgressBar
+        android:id="@+id/progressBar_reg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="-1dip"
+       android:gravity="center"
+       android:id="@+id/teks"
+       android:visibility="gone"
+       android:hint="Registering...please wait."
+       android:padding="8dp"
+       android:textSize="12sp" />
+    
+   
+
+    
+    </LinearLayout>
+
+    
+    
+
+    
+ 
+    
+    
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true">
+    
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="7dp"
+        android:layout_height="wrap_content"
+     	android:background="@drawable/button_rounded_corner"
+        android:text="Sign up"/>
+    
+  </LinearLayout> 
+ 
+</LinearLayout>
+
+</ScrollView>

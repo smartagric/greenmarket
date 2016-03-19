@@ -1,0 +1,530 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@drawable/card_avatar_bar"
+        android:orientation="horizontal"
+        android:paddingTop="15dp" 
+        android:paddingLeft="15dp"
+        android:id="@+id/ree"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+ 
+        
+        
+        
+        <RelativeLayout 
+    	android:id="@+id/thumbnailrelativer"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:visibility="visible"
+       
+        android:layout_alignParentLeft="true"
+       
+        android:layout_marginRight="8dp"
+  		>
+  		
+            
+        <com.integra.dealcaller.RoundedImageVieww
+       	        android:layout_width="match_parent"
+       	        android:layout_height="match_parent"
+       	        android:id="@+id/thumbnail00"
+       	   	   
+       	        android:scaleType="centerCrop"
+       	        android:src="@drawable/null_profile"
+				android:padding="1dp"
+				app:riv_corner_radius="5dip"
+      			app:riv_border_width="3dip"                                  
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff" />
+        
+        
+            <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/titleinitials00"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sinking_button"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+         />
+            
+            
+         <!-- Initials -->
+    <TextView
+        android:id="@+id/titleinitials00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="1dip"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="SP"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold" />
+ 
+        </RelativeLayout>
+        
+ 
+ 
+    <!-- Movie Title -->
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/rating00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@+id/brief"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="@dimen/rating" />
+     
+  <!-- Ticker-->
+
+    <TextView
+        android:id="@+id/ticker00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating00"
+        android:layout_toLeftOf="@+id/brief"
+        android:drawableLeft="@drawable/location_pin"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="@dimen/rating" />
+    
+    <!-- Day -->
+ 
+    <TextView
+        android:id="@+id/day00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#3498db"
+        android:layout_below="@id/ticker00"
+        android:textColor="#ffffff"
+        android:padding="3dp"
+        android:text="Mon"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/title00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnailrelativer"
+        android:layout_toRightOf="@+id/thumbnailrelativer"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/brief"
+        android:background="@drawable/briefcase"
+        android:padding="7dp"
+        android:scaleType="fitCenter"
+        
+        android:visibility="visible" />
+ 
+</RelativeLayout>
+
+    <ScrollView 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/ree">
+    
+        
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hmkcode.nearpime.activities.NewPostActivity"
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:layout_weight="1.5"   
+       	android:layout_width="match_parent"
+       	android:layout_height="0dp">
+       	
+	    
+	    <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:hint="Category Title"
+            android:paddingTop="6dp"
+            android:id="@+id/saysomething44"
+            android:focusable="true"
+            android:focusableInTouchMode="true" 
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+            android:minHeight="50dp"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"/>
+       	    
+       	    <com.integra.dealcaller.RoundedImageVieww2 
+       	        android:layout_width="match_parent"
+       	        android:layout_height="250dp"
+       	        android:background="#e8ebf2"
+       	        android:id="@+id/BigImage"
+       	        android:scaleType="fitCenter"
+       	        android:contentDescription="Main Image"
+       	        android:padding="1dp"
+       	        android:visibility="gone"
+				app:riv_corner_radius="30dip"
+      			app:riv_border_width="3dip"
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff"/>
+       	    
+       	     <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Double touch to add photos"
+			        android:textSize="12sp"
+			        android:id="@+id/ty"
+			        android:fontFamily="corbel"
+			        android:layout_below="@+id/saysomething44"
+			        android:layout_marginTop="8dp"
+			        android:layout_marginBottom="4dp"
+			        android:textStyle="italic"
+			        android:paddingLeft="@dimen/feed_item_profile_info_padd"
+			        android:textColor="#A9A9A9"/>
+			
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ty"
+                android:orientation="horizontal"
+             
+               
+                android:visibility="visible"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+                
+			    
+			   
+                
+		<RelativeLayout  
+       	android:layout_width="wrap_content"
+       	android:layout_weight="0.11"
+       	android:layout_height="wrap_content">
+
+            <com.integra.dealcaller.RecyclingImageView 
+                android:id="@+id/selected_image1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:src="@drawable/null_cover"
+                android:layout_marginTop="1dip"
+                
+                android:scaleType="fitXY" />
+            
+                 <ImageButton
+     android:id="@+id/bu1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/white_add"
+     
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:visibility="visible"/>
+              
+            
+       </RelativeLayout> 
+            
+            
+            <RelativeLayout  
+       	android:layout_width="wrap_content"
+       	android:layout_weight="0.11"
+       	android:layout_height="wrap_content">
+
+            <com.integra.dealcaller.RecyclingImageView 
+                android:id="@+id/selected_image2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:src="@drawable/null_cover"
+                android:layout_weight="0.11"
+                android:scaleType="fitXY" />
+            
+          <ImageButton
+     android:id="@+id/bu2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/white_add"
+     
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:visibility="visible"/>
+              
+       </RelativeLayout>      
+            
+            
+            <RelativeLayout  
+       	android:layout_width="wrap_content"
+       	android:layout_weight="0.11"
+       	android:layout_height="wrap_content">
+
+            <com.integra.dealcaller.RecyclingImageView 
+                android:id="@+id/selected_image3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:src="@drawable/null_cover"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitXY" />
+            
+          <ImageButton
+     android:id="@+id/bu3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/white_add"
+     
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:visibility="visible"/>
+              
+              
+      </RelativeLayout> 
+      
+            
+            
+            
+            <RelativeLayout  
+       	android:layout_width="wrap_content"
+       	android:layout_weight="0.11"
+       	android:layout_height="wrap_content">
+
+            <com.integra.dealcaller.RecyclingImageView 
+                android:id="@+id/selected_image4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:src="@drawable/null_cover"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitXY" />
+            
+            
+                 <ImageButton
+     android:id="@+id/bu4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/white_add"
+     
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:visibility="visible"/>
+            
+            </RelativeLayout> 
+            
+            
+            <RelativeLayout  
+       	android:layout_width="wrap_content"
+       	android:layout_weight="0.11"
+       	android:layout_height="wrap_content">
+
+                <com.integra.dealcaller.RecyclingImageView 
+            android:id="@+id/selected_image5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="-1dip"
+            android:src="@drawable/null_cover"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+            android:scaleType="fitXY" />
+                
+          <ImageButton
+     android:id="@+id/bu5"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/white_add"
+     
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:visibility="visible"/>
+          
+          
+       </RelativeLayout>         
+                
+            
+            </LinearLayout>
+			<ImageView
+			    android:id="@+id/capture_photo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/BigImage"
+			    android:layout_alignParentLeft="true"
+			    android:layout_margin="8dp"
+			    android:background="@drawable/button_rounded_corner"
+			    android:clickable="true"
+			    android:contentDescription="image"
+			    android:padding="4dp"
+			    android:scaleType="fitXY"
+			    android:visibility="gone"
+			    android:src="@drawable/ic_action_camera2" />
+
+			<ImageView
+			    android:id="@+id/button_to_choose"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/capture_photo"
+			    android:layout_alignParentRight="true"
+			    android:layout_margin="8dp"
+			    android:layout_marginRight="14dp"
+			    android:clickable="true"
+			    android:contentDescription="image"
+			    android:padding="4dp"
+			    android:scaleType="fitXY"
+			    android:visibility="gone"
+			    android:src="@drawable/ic_action_add_to_queue" />
+
+	</RelativeLayout>
+	    
+
+	<LinearLayout
+		android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_marginTop="15dp"
+     	android:orientation="vertical"
+     	android:focusableInTouchMode="true" 
+     	>
+        
+       <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:hint="Description of items in this category"
+            android:paddingTop="6dp"
+            android:id="@+id/saysomething"
+            android:minHeight="80dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" 
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+          
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"/>
+       
+        <EditText 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:hint="Price range"
+            android:paddingTop="6dp"
+            android:id="@+id/saysomething55"
+            android:focusable="true"
+            android:focusableInTouchMode="true" 
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+            android:minHeight="50dp"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"/>
+        
+        
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    >
+    
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_weight="0.11"
+        android:textSize="14sp"
+        android:paddingRight="5dp"
+        android:layout_height="wrap_content"
+     
+        android:text="Cancel"/>
+    
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnCreateProduct2"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_weight="0.11"
+        android:paddingLeft="5dp"
+        android:layout_height="wrap_content"
+     	
+        android:text="Add"/>
+    
+  </LinearLayout> 
+        
+	</LinearLayout>
+	
+	
+	<ProgressBar
+        android:id="@+id/progressinsidepage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"/>
+	
+	 
+     
+</LinearLayout>
+</ScrollView>
+
+    
+
+    </RelativeLayout>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:activetalk="http://schemas.android.com/apk/res-auto"  >
+    
+
+<item android:id="@+id/action_search"
+      android:icon="@drawable/ic_action_search"
+      android:title="@string/action_search"
+      activetalk:showAsAction="always"
+      
+      android:paddingLeft="-2dp"
+      android:paddingRight="-2dp"
+      
+      activetalk:actionViewClass="android.support.v7.widget.SearchView"/>
+      
+  
+    <!-- Help -->
+    <item android:id="@+id/action_create"
+          android:icon="@drawable/white_add2"
+          android:title="Create a Store"
+          
+          activetalk:showAsAction="never"/>
+         
+    
+   
+    <!-- Help -->
+    <item android:id="@+id/action_update"
+          android:icon="@drawable/ic_action_upload"
+          android:title="Add items to your Store"
+          activetalk:showAsAction="never"/>
+   
+    
+       
+</menu>

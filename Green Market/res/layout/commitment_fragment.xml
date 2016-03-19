@@ -1,0 +1,128 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/imageButton100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/captionp" />
+
+        
+        
+       
+        
+        
+         <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Help requests, Orphanages / Leprosariums etc..."
+        android:textColor="#000000"
+        
+        android:textSize="12dp"
+         />
+
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@color/feed_bg"
+   
+        android:orientation="horizontal"
+   
+        android:layout_marginBottom="5dp"
+        android:paddingTop="8dp" >
+        
+
+
+<com.integra.dealcaller.HorizontalListView
+                  android:id="@+id/listee_main2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="250dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:divider="#cdcdcd"
+                  android:layout_below="@+id/txtKindly"
+        		  android:smoothScrollbar="true"
+        		  android:scrollingCache="false"
+    			  android:animationCache="false"
+                  android:dividerHeight="0.1dp"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  android:listSelector="@drawable/list_row_selector"
+                   >
+              </com.integra.dealcaller.HorizontalListView>
+
+</LinearLayout>
+         <ProgressBar
+             android:id="@+id/progressBarcf"
+             style="?android:attr/progressBarStyleLarge"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center"
+             android:layout_height="wrap_content" />
+     
+     </LinearLayout>
+     
+        
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+     
+    <com.integra.dealcaller.NestedListView
+        android:id="@+id/listry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TouchedBySituation"
+        android:layout_below="@+id/linearLayout3"
+        android:divider="@null">
+    </com.integra.dealcaller.NestedListView>
+    
+ </LinearLayout>
+    
+
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">  
+
+    <Button
+        android:id="@+id/TouchedBySituation"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:text="Touched by a situation? Tell us about it."
+        android:textColor="@color/link"
+        android:textSize="11sp"
+        android:textStyle="italic" />
+ </LinearLayout>
+ 
+    </LinearLayout>
+</ScrollView >

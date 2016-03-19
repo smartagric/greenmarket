@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+ 
+     <ProgressBar
+		android:id="@+id/progressBarmyrequests"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"
+	
+		 />
+    
+    <ListView
+        android:id="@+id/listeemyrequests"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#e6e6e6"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector" 
+        android:focusable="false"
+		android:focusableInTouchMode="false" />
+ 
+    
+    <TextView android:id="@+id/no_results" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/searching"
+         android:textSize="14sp"
+         android:gravity="center"
+         android:text="Empty"
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+		 
+		 
+		 <TextView android:id="@+id/no_internet" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/no_results"
+         android:textSize="14sp"
+         android:gravity="center"
+         android:text="Please check your internet connection and try again."
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.integra.dealcaller">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <TextView
+                    android:id="@+id/namen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timestampn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                 >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePicn04"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitCenter" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePicn03"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitCenter" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePicn02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitCenter" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePicn01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+                android:scaleType="fitCenter" />
+
+                <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profilePicn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="-1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="0.11"
+            android:scaleType="fitCenter" />
+                
+                
+            </LinearLayout>
+            
+        <TextView
+            android:id="@+id/txtStatusMsgn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top" />
+
+        <TextView
+                    android:id="@+id/ColonInstitution"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                 	android:textColor="@color/blue"
+                    android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+           			android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                    android:text="Price range:"/>
+        <TextView
+                    android:id="@+id/NestingInstitution"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold|italic"
+                
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+           			android:paddingRight="@dimen/feed_item_status_pad_left_right"/>
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Now"
+            android:background="@drawable/button_rounded_corner6"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+           
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/shop_now"/>
+        
+        
+        <TextView
+            android:id="@+id/txtUrln"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:textColor="@color/blue"
+            android:textStyle="italic"
+            android:fontFamily="Times New Roman"
+            android:layout_marginBottom="15dp"
+            android:text="Read Nestor's Statement"
+            android:visibility="gone" 
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:textColorLink="@color/link" />
+
+        
+        <TextView
+                    android:id="@+id/ColonVerification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            		android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            		android:visibility="gone" 
+                    android:text="Status:"/>
+        <TextView
+                    android:id="@+id/VerificationStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold|italic" 
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone" 
+                    android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+           			android:paddingRight="@dimen/feed_item_status_pad_left_right"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" 
+			android:visibility="gone">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

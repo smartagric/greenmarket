@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/feed_bg"
+    
+    >
+        
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        
+         
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+                 <ImageView
+                     android:id="@+id/imageButton122"
+                     android:layout_width="fill_parent"
+                     android:layout_height="165dp"
+                     
+                     android:scaleType="centerCrop"
+                     android:focusable="false"
+		 			 android:focusableInTouchMode="false"
+                     android:background="#ffffff"
+                     android:src="@drawable/null_cover" />
+                 
+                 
+                 <ImageButton
+     android:id="@+id/bu"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:background="@drawable/button_rounded_corner5"
+     android:src="@drawable/ic_action_play"
+     android:paddingBottom="5dp"
+     android:paddingLeft="12dp"
+     android:paddingRight="15dp"
+     android:paddingTop="5dp"
+      android:focusable="true"
+     android:focusableInTouchMode="true"
+    
+     android:textColor="#ffffff"
+     android:textSize="14sp" 
+     android:visibility="visible"/>
+                 
+                 
+</RelativeLayout>
+
+     
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="0.9"
+              android:background="#dff0f9"
+              android:orientation="horizontal"
+              android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/lblExpenseCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp" />
+</LinearLayout>
+
+         
+     
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+		android:layout_weight="0.01"
+
+        android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/btnAddExpense"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="#dff0f9"
+                  
+                  
+                  android:padding="5dp"
+                  android:src="@drawable/giving_hand" />
+
+        </LinearLayout>
+
+      
+     
+       </LinearLayout>
+
+       
+        
+          <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	
+        >
+          
+               <ProgressBar
+            android:id="@+id/progressBarcpd"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            
+     </RelativeLayout>
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+       
+        <com.integra.dealcaller.NestedListView
+        
+            android:id="@+id/listviewt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+        
+        </com.integra.dealcaller.NestedListView>
+       
+		</LinearLayout>
+        
+        
+
+ </LinearLayout>   
+
+
+</ScrollView>

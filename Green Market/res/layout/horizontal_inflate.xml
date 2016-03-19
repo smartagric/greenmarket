@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="290dp"
+    
+     >
+
+<ProgressBar
+		android:id="@+id/progressee"
+		style="?android:attr/progressBarStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"/>
+		
+		
+		 
+		 
+		 <TextView android:id="@+id/no_results2" 
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         
+         android:textSize="14sp"
+         android:gravity="center"
+         android:text="No Products now.."
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+		 
+		 
+		 <TextView android:id="@+id/no_internet2" 
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/no_results"
+         android:textSize="14sp"
+         android:gravity="center"
+         android:text="Please check your internet connection and try again."
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:fontFamily="corbel"
+         android:layout_margin="10dip"
+         android:textColor="#9a9a9a"/>
+		 
+	<com.integra.dealcaller.HorizontalListView
+	    android:id="@+id/listee_main2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200dp"
+	    android:layout_below="@+id/txtKindly"
+	    android:animationCache="false"
+	    android:divider="#00000000"
+	    android:layout_marginBottom="15dp"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:listSelector="@drawable/list_row_selector"
+	    android:scrollingCache="false"
+	    android:smoothScrollbar="true" >
+
+              </com.integra.dealcaller.HorizontalListView>
+              
+	
+	<TextView
+        android:id="@+id/txtKindly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_below="@+id/listee_main2"
+ 		android:background="#639e31"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="Stores..."
+        
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+	<TextView
+	    android:id="@+id/txtKindly"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="#639e31"
+	    android:layout_marginTop="2dp"
+	    android:paddingBottom="7dp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="6dp"
+	    android:text="Trending now..."
+	    android:textColor="#ffffff"
+	    android:textSize="16sp"
+	    android:textStyle="bold|italic" />
+
+        </RelativeLayout>

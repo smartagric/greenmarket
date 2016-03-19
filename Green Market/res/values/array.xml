@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="long_array">
+        <item>Block</item>
+        <item>Delete</item>
+        
+    </string-array>
+    
+    <string-array
+        name="long_array2">
+        
+        <item>Change</item>
+        <item>Download</item>
+        
+        
+    </string-array>
+    
+    
+    <string-array
+        name="long_array2plus">
+        <item>Change</item>
+        <item>Download</item>
+        
+    </string-array>
+    
+    
+    <string-array
+        name="long_array3">
+        <item>Download</item>
+        <item>View in ImageViewer</item>
+        
+    </string-array>
+    
+    
+    <string-array
+        name="long_array4">
+        <item>From Camera</item>
+        <item>From Images</item>
+        
+        
+    </string-array>
+ 
+      <string-array
+        name="color_array">
+    
+        <item>#3598db</item>
+        
+        <item> #FF007F</item>
+		<item> #FF0000</item>
+		<item> #FF7F00</item>
+		<item> #FFFF00</item>
+		<item> #7FFF00</item>
+		<item> #00FF00</item>
+		<item> #00FF7F</item>
+		<item> #00FFFF</item>
+		<item> #007FFF</item>
+		<item> #0000FF</item>
+		<item> #7F00FF</item>
+		<item> #FF00FF</item>
+        
+    </string-array>
+    
+    
+</resources>

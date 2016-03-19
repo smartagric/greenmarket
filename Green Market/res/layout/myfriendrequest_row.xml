@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:padding="4dp" >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_parent_rounded_corner" 
+        android:orientation="horizontal"
+        android:padding="8dp" >
+        
+ 
+    <!-- Thumbnail Image -->
+    <com.integra.dealcaller.NetworkImageView3
+        android:id="@+id/thumbnailmyrequest"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Movie Title -->
+ 
+   
+    <!-- Genre -->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnailmyrequest"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thumbnailmyrequest"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/imageButtontryrtry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/circle4"
+            android:src="@drawable/wrong" />
+
+        <ImageButton
+            android:id="@+id/imageButtontryrtry2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle5"
+            android:padding="5dp"
+            android:src="@drawable/correct"
+            android:layout_marginTop="7dp"
+          />
+ 
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/titlemyrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/thumbnailmyrequest"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/genremyrequest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/titlemyrequest"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+
+    </RelativeLayout>
+</RelativeLayout>

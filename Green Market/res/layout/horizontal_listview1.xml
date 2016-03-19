@@ -1,0 +1,16 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#fff"
+  >
+  
+  <com.integra.dealcaller.HorizontalListView
+      android:id="@+id/listview_for_horiz"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#ddd">
+  </com.integra.dealcaller.HorizontalListView>
+  
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/thumbrelate"
+    android:layout_margin="10dp" 
+  android:background="@drawable/bg_parent_rounded_corner">
+    
+ 
+    
+    <RelativeLayout 
+    	android:id="@+id/thumbnailrelative"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="visible"
+       
+        android:layout_alignParentLeft="true"
+       
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+  		>
+  		
+        <com.integra.dealcaller.RoundedImageVieww
+       	        android:layout_width="match_parent"
+       	        android:layout_height="match_parent"
+       	        android:id="@+id/thumbnailmytalkers"
+       	   	   
+       	        android:scaleType="fitCenter"
+       	        android:src="@drawable/null_profile"
+				android:padding="1dp"
+				app:riv_corner_radius="30dip"
+      			app:riv_border_width="3dip"                                  
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff"/>
+        
+          
+        
+         <!-- Initials -->
+    <TextView
+        android:id="@+id/titleinitials"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="1dip"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="SP"
+        android:textSize="25sp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/titleinitials"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle2"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/comment_icon2" />
+ 
+        </RelativeLayout>
+        
+    
+    
+    
+    
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/titlemytalkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:textColor="@color/myorange"
+        android:layout_toRightOf="@+id/thumbnailrelative"
+        android:textSize="@dimen/title"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlemytalkers"
+        android:layout_marginTop="1dip"
+        android:textSize="@dimen/rating"
+        android:visibility="gone" />
+     
+    <!-- Genre -->
+
+    <TextView
+        android:id="@+id/genremytalkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titlemytalkers"
+        
+        android:layout_below="@id/rating"
+        android:layout_marginTop="1dp"
+        android:textAllCaps="false"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/title" />
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:textColor="#98db40"
+        android:textSize="@dimen/year" ></TextView>
+
+    <Button
+        android:id="@+id/imageButtonfollow_mytalkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titlemytalkers"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:src="@drawable/ic_action_next_item2" />
+ 
+</RelativeLayout>

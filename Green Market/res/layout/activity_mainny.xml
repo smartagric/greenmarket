@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="@color/white" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl"
+     	android:paddingLeft="25dp"
+   		android:paddingRight="25dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+       
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="-1dip"
+            android:maxWidth="50dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="e -mail"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loginPassword"
+            android:layout_alignRight="@+id/loginPassword"
+            android:layout_below="@+id/loginPassword"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:background="@drawable/for_buttons"
+            android:text="Login"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+       
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loginEmail"
+            android:layout_alignRight="@+id/loginEmail"
+            android:layout_below="@+id/loginEmail"
+            android:maxWidth="50dp"
+            android:background="@drawable/edittext_rounded_corner"
+            android:drawableLeft="@drawable/ic_action_not_secure"
+            android:ems="10"
+            android:layout_marginTop="-1dip" 
+            android:hint="Password"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:padding="5dp" 
+         
+            />
+        
+         
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+    		
+            android:background="@null"
+            android:layout_below="@+id/btnLogin"
+            android:paddingBottom="10dp"
+            android:text="Create a User account"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loginEmail"
+            android:layout_alignLeft="@+id/trybutton"
+            android:layout_marginBottom="29dp"
+            android:gravity="center"
+            android:fontFamily="corbel"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#8e8e8e"
+         
+            
+            />
+
+    </RelativeLayout>
+    
+   
+            
+            
+
+     
+ 
+</RelativeLayout>

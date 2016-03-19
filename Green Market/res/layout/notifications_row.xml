@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.integra.dealcaller">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:paddingRight="@dimen/feed_item_margin"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+           
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            
+            <com.integra.dealcaller.RoundedImageVieww
+       	        android:layout_width="60dp"
+       	        android:layout_height="60dp"
+       	        
+       	        android:id="@+id/profilePic4noti"
+       	        android:scaleType="fitCenter"
+       	        android:src="@drawable/null_profile"
+       	        android:background="#00000000"
+       	        android:contentDescription="Main Image"
+       	        android:padding="1dp"
+				app:riv_corner_radius="30dip"
+      			app:riv_border_width="3dip"
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff"/>
+
+            
+        </LinearLayout>
+        
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+            <TextView
+                android:id="@+id/name4noti"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/feed_item_profile_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timestamp4noti"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/timestamp"
+                android:textSize="@dimen/feed_item_timestamp" />
+
+            <TextView
+                android:id="@+id/txtStatusMsg4noti"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                 android:textSize="@dimen/rating"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+            android:paddingRight="7dp" />
+        </LinearLayout>
+        
+        
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal" >
+            
+             
+              <com.android.volley.toolbox.NetworkImageView
+             android:id="@+id/profilePic44noti"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:scaleType="fitCenter"
+             android:src="@drawable/null_profile"
+             android:visibility="gone"/>
+
+        </LinearLayout>
+
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

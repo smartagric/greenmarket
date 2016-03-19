@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relate"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/feed_bg"
+   
+    >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@drawable/list_row_selector"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+ 
+    <!-- Thumbnail Image -->
+    <com.integra.dealcaller.NetworkImageView3
+        android:id="@+id/thumbnail00"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/null_profile"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_alignTop="@+id/thumbnail00"
+        android:layout_toRightOf="@+id/thumbnail00"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/rating00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title00"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail00"
+        android:textSize="@dimen/rating" />
+     
+    
+ 
+</RelativeLayout>   
+ 
+</RelativeLayout>

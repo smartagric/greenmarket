@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    
+    android:layout_margin="10dp" 
+  android:background="#05000000">
+    
+ 
+ 
+    <!-- Thumbnail Image -->
+    <com.integra.dealcaller.RoundedImageVieww
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/null_profile"
+        android:layout_marginRight="8dp"
+         app:riv_border_color="#00000000"
+         
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="12dip"
+            app:riv_oval="false" />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myorange"
+        android:padding="2dip"
+        android:layout_below="@+id/thumbnail"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:textSize="@dimen/rating" />
+     
+    <!-- Genre -->
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rating"
+        android:layout_below="@id/rating"
+        android:layout_marginTop="5dp"
+        
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:textColor="#98db40"
+        android:textSize="@dimen/year" />
+
+    <ImageButton
+        android:id="@+id/imageButtonfollow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:background="#00000000"
+        android:src="@drawable/ic_action_next_item2" />
+ 
+</RelativeLayout>

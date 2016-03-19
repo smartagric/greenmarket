@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/feed_bg"
+    
+    >
+        
+    
+
+                 <com.android.volley.toolbox.NetworkImageView
+                     android:id="@+id/imageButton122"
+                     android:layout_width="fill_parent"
+                     android:layout_height="match_parent"
+                     android:background="#ffffff"
+                     android:focusable="false"
+                     android:focusableInTouchMode="false"
+                     android:scaleType="centerCrop"
+                     android:src="@drawable/null_cover" />
+
+      <ProgressBar
+          android:id="@+id/progressBarcpd"
+          style="?android:attr/progressBarStyleInverse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+
+      <LinearLayout
+          android:id="@+id/lini"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:background="#dff0f9"
+          android:baselineAligned="false"
+          android:orientation="horizontal" >
+          
+          
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="0.01"
+              android:orientation="horizontal" >
+
+              <ImageButton
+                  android:id="@+id/btnAddExpense"
+                  android:layout_width="wrap_content"
+                  android:layout_height="65dp"
+                  android:background="#00000000"
+                  android:padding="5dp"
+                  android:src="@drawable/giving_hand" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="0.90"
+              android:background="#dff0f9"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:orientation="horizontal"
+               >
+
+              <TextView
+                  android:id="@+id/lblExpenseCancel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:textColor="#000000"
+                  android:text="GHC"
+                  android:textSize="20sp" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="0.01"
+              android:padding="5dp"
+              android:orientation="horizontal" >
+
+              <Button
+                  android:id="@+id/btnAddExpense2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/button_rounded_corner6"
+                  android:padding="5dp"
+                  android:text="Buy"
+                  android:textSize="20sp"
+                  android:shadowColor="#e6e6e6"
+                  android:shadowDx="60"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"
+                  
+                  android:src="@drawable/giving_hand" />
+          </LinearLayout>
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/teks4"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/lini"
+          android:background="#60000000"
+          android:drawablePadding="5dp"
+          android:fontFamily="corbel"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:textStyle="italic" />
+
+      <TextView
+          android:id="@+id/TextView03"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/teks4"
+          android:layout_alignParentLeft="true"
+          android:background="#60000000"
+          android:drawablePadding="5dp"
+          android:fontFamily="corbel"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:textStyle="italic" />
+
+</RelativeLayout>

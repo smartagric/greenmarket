@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+ 
+    <ScrollView 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/patterno2">
+    
+        
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hmkcode.nearpime.activities.NewPostActivity"
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+	
+        <RelativeLayout
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_marginTop="30dp"
+     	
+     	>
+        
+       	    
+       	    <com.integra.dealcaller.RoundedImageVieww
+       	        android:layout_width="70dp"
+       	        android:layout_height="70dp"
+       	        
+       	        android:id="@+id/BigImage"
+       	        android:scaleType="fitCenter"
+       	        android:src="@drawable/null_profile"
+       	        android:background="#00000000"
+       	        android:contentDescription="Main Image"
+       	        android:padding="1dp"
+				app:riv_corner_radius="30dip"
+      			app:riv_border_width="3dip"
+      			app:riv_oval="false"
+      			app:riv_border_color="#ffffff"/>
+			
+			 <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/BigImage"
+        android:textSize="@dimen/title"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:text="Sammy"/>
+ 
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/residence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:textSize="@dimen/rating"
+        android:visibility="visible"
+        android:text="Kumasi"
+        android:layout_marginLeft="8dp"
+         android:layout_toRightOf="@+id/BigImage" />
+     
+    <!-- Genre -->
+                
+          
+</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	
+     	>
+        
+       <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/large_edittext_bg"
+            android:hint="Say something..."
+            android:paddingTop="20dp"
+            
+            android:id="@+id/saysomething"
+            android:focusableInTouchMode="true" 
+            android:paddingBottom="8dp"
+            android:padding="50dp"
+            android:minHeight="50dp"
+            android:textSize="14sp"
+            
+            android:gravity="start"/>
+	</RelativeLayout>
+	
+	
+	<ProgressBar
+        android:id="@+id/progressinsidepage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"/>
+	
+	 
+     
+</LinearLayout>
+</ScrollView>
+
+    
+
+    </RelativeLayout>

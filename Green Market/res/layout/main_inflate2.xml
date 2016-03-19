@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    
+    
+    android:background="@color/feed_bg" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+      
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+        
+   
+
+ <TextView
+        android:id="@+id/txtKindly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ 		android:layout_marginTop="5dp"
+ 		android:background="#3598db"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:padding="4dp"
+        android:text="Impact Lives"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+<com.integra.dealcaller.HorizontalListView
+                  android:id="@+id/listee_main2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:divider="#cdcdcd"
+                  android:layout_below="@+id/txtKindly"
+        		  android:smoothScrollbar="true"
+        		  android:scrollingCache="false"
+    			  android:animationCache="false"
+                  android:dividerHeight="0.1dp"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  android:listSelector="@drawable/list_row_selector"
+                   >
+              </com.integra.dealcaller.HorizontalListView>
+
+</LinearLayout>
+        </LinearLayout>

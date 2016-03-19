@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="#00000000"
+    android:layout_margin="20dp"
+    
+    >
+ 
+    <!-- Thumbnail Image -->
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/vview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:minHeight="150dp"
+        android:maxHeight="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/null_stream"
+         />
+ 
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/title"
+        android:lines="1"
+        android:background="#ffffff"
+        android:layout_below="@+id/vview"
+        android:textStyle="bold"
+        
+        />
+ 
+    <!-- Rating -->
+     
+    <!-- Genre -->
+ 
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/releaseYear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+        android:lines="1"
+        android:background="#ffffff"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/rating2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+     	android:lines="1"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/title2"
+        android:textSize="@dimen/rating" />
+
+    <TextView
+        android:id="@+id/genre2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating2"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:background="#ffffff"
+        android:textColor="#98db40"
+        android:textSize="@dimen/genre" />
+
+    <ImageButton
+        android:id="@+id/imageButtonfollow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vview"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_action_play2" />
+
+    
+ 
+</RelativeLayout>

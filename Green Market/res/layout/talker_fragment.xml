@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >"
+    
+ 
+     <ProgressBar
+            android:id="@+id/progressBarViewer3"
+            style="?android:attr/progressBarStyle"
+           android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_centerInParent="true"
+	
+	
+		 />
+         
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        
+         >
+        
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#ffffff"
+             android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:id="@+id/scroll_down"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Scroll down to find enter button"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:padding="15dp"
+            />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+           
+           
+            />
+        
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView02"
+            android:layout_width="fill_parent"
+            
+          
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+            
+            />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView03"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+           
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+          
+             />
+        
+        
+       
+      <com.android.volley.toolbox.NetworkImageView
+          android:id="@+id/imageView04"
+          android:layout_width="fill_parent"
+          
+          android:layout_height="match_parent"          
+          android:scaleType="fitCenter"
+          android:layout_margin="5dp"
+          
+         />
+      
+      <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView05"
+            android:layout_width="fill_parent"
+         
+            android:layout_height="match_parent"         
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+           
+            />
+        
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView06"
+            android:layout_width="fill_parent"
+           
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+            />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView07"
+            android:layout_width="fill_parent"
+          
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+             />
+
+      <com.android.volley.toolbox.NetworkImageView
+          android:id="@+id/imageView08"
+          android:layout_width="fill_parent"
+       
+          android:layout_height="match_parent"
+          android:scaleType="fitCenter"
+      	  android:layout_margin="5dp"
+           />
+      
+      
+      <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView09"
+            android:layout_width="fill_parent"
+           
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+             />
+
+      <com.android.volley.toolbox.NetworkImageView
+          android:id="@+id/imageView10"
+          android:layout_width="fill_parent"
+         
+          android:layout_height="match_parent"
+          android:scaleType="fitCenter"
+          android:layout_margin="5dp"
+         
+          />
+
+      <Button
+        android:id="@+id/buttos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle3"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:text="Enter"
+        
+        android:textColor="#ffffff" />
+      </LinearLayout>
+      
+   </ScrollView>
+
+    
+
+   </RelativeLayout>
